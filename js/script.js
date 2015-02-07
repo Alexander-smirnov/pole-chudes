@@ -1,6 +1,5 @@
-function validateForm() {
-var temp = getElementsByName("submit");
-temp.onSubmit = function () {
+
+$("#submit").submit (function () {
 var x=document.forms["myForm"]["name"].value;
 var y = Math.round((Math.random() * (10 - 1) + 1));
 console.log (y);
@@ -23,5 +22,6 @@ if (x==null || x=="")
 	 return false; 
   }
   }
-}
-}()
+});
+
+
